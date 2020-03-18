@@ -35,7 +35,7 @@ Superpowered C++ Audio Library and SDK is the leading C++ Audio Library featurin
 
 For the most up-to-date feature list, see: https://superpowered.com/audio-library-sdk
 
-### NOTE: the Superpowered SDK is not included!
+### NOTE: the Superpowered SDK is not included! This example uses Superpowered Audio SDK version 1.3.1
 #### Download it from here: https://github.com/superpoweredSDK/Low-Latency-Android-iOS-Linux-Windows-tvOS-macOS-Interactive-Audio-Platform
 
 
