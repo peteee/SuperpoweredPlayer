@@ -115,7 +115,7 @@ Java_com_superpowered_playerexample_MainActivity_onSpeedSlider (
     player->setTempo((value/10000.0), true);
 }
 
-// onPitchSlider - Handle TimeStretching events.
+// onPitchSlider - Handle PitchShifting events.
 extern "C" JNIEXPORT void
 Java_com_superpowered_playerexample_MainActivity_onPitchSlider (
         JNIEnv * __unused env,
