@@ -3,6 +3,30 @@ Real-time time stretching and pitch-shifting of audio files with Superpowered SD
 
 ![alt text](https://raw.githubusercontent.com/peteee/SuperpoweredPlayer/2224e0fa48f90474184ebbcfd94ad4be700ac546/spplayer_demo_screenshot.jpeg)
 
+This extends the PlayerExample with the following:
+```c++
+// onSpeedSlider - Handle TimeStretching events.
+extern "C" JNIEXPORT void
+Java_com_superpowered_playerexample_MainActivity_onSpeedSlider (
+        JNIEnv * __unused env,
+        jobject __unused obj,
+        jint value
+) {
+    player->setTempo((value/10000.0), true);
+}
+
+// onPitchSlider - Handle PitchShifting events.
+extern "C" JNIEXPORT void
+Java_com_superpowered_playerexample_MainActivity_onPitchSlider (
+        JNIEnv * __unused env,
+        jobject __unused obj,
+        jint value
+) {
+    player->setPitchShift(value);
+}
+```
+Check out in full: https://github.com/peteee/SuperpoweredPlayer/blob/master/app/src/main/cpp/PlayerExample.cpp
+
 
 ## What is Superpowered C++ Audio Library and SDK for Android, iOS, macOS, tvOS, Linux and Windows?
 Check it out here: https://superpowered.com
